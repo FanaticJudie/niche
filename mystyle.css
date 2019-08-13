@@ -1,0 +1,41 @@
+/* styling the html */
+#container{
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#container1{
+    width: 200px;
+   
+}
+#container2{
+    width: 400px;
+    
+}
+input{
+    width: 80px;
+    margin-bottom: 2px;
+}
+.input1{
+    width: 80px;
+}
+.input2{
+    width: 180px;
+}
+.input3{
+    width: 300px;
+    
+}
+.input4{
+    width: 120px;
+}
+.b1{
+    width: 60px;
+}
+.about1{
+    width: 600px
+    
+}
+    
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./myscript.js"></script>
+
+</head>
+
+<body>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-gap: 10px;
+        }
+
+        .container>div {
+
+            padding: 10px;
+            width: 30%;
+            margin-left: 100px;
+        }
+
+        .form {
+            margin-left: 100px;
+        }
+    </style>
+    <h1>Registration Form</h1>
+    <div class="container">
+        <!-- inputting labels... -->
+        <div class="box1">
+            <label for="user id">user id:</label><br><br>
+            <label for="Password">Password:</label><br><br>
+            <label for="Name">Name:</label><br><br>
+            <label for="Address">Address:</label><br><br>
+            <label for="Country">Country:</label><br><br>
+            <label for="Zip Code">Zip Code:</label><br><br>
+            <label for="Email">Email:</label><br><br><br>
+            <label for="Sex">Sex:</label><br><br>
+            <label for="Language">Language:</label> <br><br>
+            <label for="About">About:</label><br><br>
+            <br><br>
+            <br><br>
+        </div>
+
+        <!--the form starts here...-->
+        <form action="" method="post" onsubmit="return validate()" name="myform">
+            <input type="text" class="input1" name="userId"><span id="user_id"></span> <br><br>
+            <input type="text" class="input1" name="password"><span id="pass"></span> <br><br>
+            <input type="text" class="input3" name="name"><span id="name"></span><br><br>
+            <input type="text" class="input3" name="address"><span id="address"></span><br><br>
+            <select name="country">
+                <option value="Default">(please select a country)</option>
+                <option value="Ug">Uganda</option>
+                <option value="Ke">Kenya</option>
+                <option value="Tz">Tanzania</option>
+            </select> <span id="country"></span><br><br>
+            <input type="text" class="input4" name="zip"><span id="zip"></span><br><br>
+            <input type="email" class="input3" name="email"><span id="email"></span><br><br>
+            <input type="radio" name="sex">Male <input type="radio" name="sex">Female<span id="gender"></span><br><br>
+            <input type="checkbox" name="english" checked>English
+            <input type="checkbox" name="non_english">Non English<span id="language"></span><br><br>
+            <textarea class="about1" name="about1"></textarea> <span id="about1"></span><br><br>
+            <button type="Submit" class="b1">Submit</button>
+        </form>
+        <!-- the form ends here -->
+
+    </div>
+</body>
+
+</html>
